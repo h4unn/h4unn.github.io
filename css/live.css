@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@font-face {
+   font-family: 'HallymGothic-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+   font-weight: 400;
+   font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+.hanna * {
+   font-family: 'Hanna';
+}
+#wrap{font-family: 'Hanna'; font-size:16px;}
+#header{width:100%;  height:300px; padding-top:20px; position:relative;}
+#header h1{line-height:2.8rem;}
+#header .inner::after{display: none;}
+#header .inner .typoArea{position:absolute; top:50%; transform:translateY(-50%);}
+#header .inner .typoArea h1{letter-spacing: 2px;}
+#header .inner .typoArea span{display: none; opacity:0; text-indent:-9999px;}
+h3{width:100%; font-size:1rem; color:#ccc; position:relative;}
+/* opacity: 0; */
+#container{width:100%; opacity:1;}
+section{padding-bottom:60px;}
+.inner{position:relative;}
+.inner::after{content:''; display:block; width:60%; height:2px; position:absolute; right:0; top:15px; background-color:#000;}
+
+
+#contect{width:100%;}
+#contect .contect_inn{width:80%; height:100%; margin:0 auto; display:flex; flex-direction:row-reverse;}
+#contect .con{width:60%; display:flex;}
+#contect .con div{width:50%;}
+#contect .con p{float:left;}
+#contect .con .emo{width:20%; margin-right:10px; text-align:center; line-height:40px; font-size:2rem;}
+#contect .con .desc{width:70%; height:100%;}
+#contect .con .desc .contect_tit{display:block; line-height:40px; font-size:1rem; font-weight:900;}
+#contect .con .desc em{line-height:20px; font-size:.9rem; font-weight:600;}
+#contect .con .desc em a{color:#000;}
+
+
+#pro1{width:100%; padding-bottom:40px; }
+#pro1 .inner{display:flex; align-items:center;}
+#pro1 .left{width:30%; margin-right:10%;}
+#pro1 .left .profile_img{width:100%; }
+#pro1 .left img{border-radius:100%; width:100%;}
+#pro1 .right{width:60%; line-height:1.5rem; }
+#pro1 h2{font-size:1.5rem; padding-bottom:20px;}
+#pro1 h2 p{font-size:1rem; color:#000;}
+
+section{width:100%;}
+section .inner{display:flex;}
+section .left{width:30%; margin-right:10%; text-align:center; font-size:1.2rem;}
+section .right{width:60%;}
+section .right ol{width:100%;}
+section .right li{padding:40px 0; display:flex; flex-wrap:wrap;}
+section .right li a{font-weight:600;}
+section .right li div{width:50%;}
+section .right li div.video{width:100%; height:25vw; margin-top:60px;}
+section .right li div.video video{width:100%; border:none; display: block;}
+section .right li strong{display: block; padding-bottom:10px;}
+section .right li .list_top{display:block; padding-bottom:10px;}
+section .right li em{display:block; padding-bottom:10px;}
+
+#question .inner::after{display:none; }
+#question .answer{display: none;}
+
+
+#footer .inner:after{display:none;}
+#footer .f_box{padding:40px 0; display:flex; line-height:40px;}
+#footer ul{width:100%; text-align:right; line-height:40px;}
+#footer ul li{display:inline-block; width:40px; height:40px; margin-right:10px;}
+#footer ul li img{border-radius:10px; display:block;}
