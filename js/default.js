@@ -15,7 +15,7 @@ $(function(){
             $container.css({paddingTop: now});
          }
       });
-      $container.delay(2000).animate({opacity:1},2000,'linear');
+      // $container.delay(2000).animate({opacity:1},2000,'linear');
    });
 
    let $stackArea = $('#stack');
@@ -52,7 +52,18 @@ $(function(){
          $(this).parent('li').addClass('active');
       }
    });
-   
+
+   let $info_page =  $('.info_page');
+   // $info_page.load('https://irisbright.co.kr/default/ #container');
+   $.ajax({
+      url : "https://irisbright.co.kr/default/",
+      dataType : "html",
+      type : "get",  // post 또는 get
+      data : JSON,   // 호출할 url 에 있는 페이지로 넘길 파라메터
+      success : function(result){
+         $(".info_page").html(result);
+      }
+   });
 });
 
 

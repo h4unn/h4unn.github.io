@@ -16,7 +16,7 @@ body{font-size:16px;}
 #header .sns{position:absolute; right:10px; top:50%; transform:translateY(-50%);}
 #header .sns li{display:inline-block; width:32px; height:32px; margin-left:10px;}
 #header .sns li img{display:block; border-radius:50%;}
-#container{width:100%; opacity:0;}
+#container{width:100%; opacity:1;}
 #intro{width:100%; height:200px; padding-top:100px; line-height:2.5rem; font-size:1.3rem;}
 #intro span{display:none;}
 
@@ -72,10 +72,17 @@ body{font-size:16px;}
 #company_profile .com_inn{display:flex;}
 #company_profile .com_inn>div{width:49%; box-sizing:border-box; border:1px solid #000;}
 #company_profile .com_inn>div a{display:block; width:100%; height:100%; position:relative; }
-#company_profile .com_inn>div a:hover span{opacity: 1;}
-#company_profile .com_inn>div a span{display:block; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,.5); opacity:0; transition:1s ease all; text-align: center; font-size:2rem; color:#fff; font-weight:700;}
+#company_profile .com_inn>div a:hover span.border_box{opacity: 1; }
+#company_profile .com_inn>div a span.border_box{display:block; position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,.5); opacity:0; transition:1s ease all; text-align: center; font-size:2rem; color:#fff; font-weight:700; padding:20px; box-sizing:border-box;}
 #company_profile .com_inn>div a span em{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
 #company_profile .com_inn>div:first-child{margin-right:2%;}
+#company_profile .com_inn>div a span.border{display:block; width:100%; height:100%; position:relative; }
+#company_profile .com_inn>div a span.border:hover::after,#company_profile .com_inn>div a span.border:hover::before{width:100%; height:100%;}
+#company_profile .com_inn>div a span.border::after{content:''; width:0%; height:0%; position:absolute; display:block; border:2px solid; top:0; left:0; border-radius:2px; border-right-color:transparent; border-bottom-color:transparent; border-left-color:#fff; border-top-color:#fff; transition:.6s ease all;}
+#company_profile .com_inn>div a span.border::before{content:''; width:0%; height:0%; position:absolute; display:block; border:2px solid; bottom:0; right:0; border-radius:2px; border-left-color:transparent; border-top-color:transparent; border-right-color:#fff; border-bottom-color:#fff; transition:.6s ease all;}
+
+#modal_wrap{width:100%; height:100vh; position:fixed; left:0; top:0;}
+#modal_wrap .modal_pop
 
 #FAQ{width:100%;}
 #FAQ li .desc{display:none; line-height:1.4rem; font-size:.9rem; padding:20px;}
