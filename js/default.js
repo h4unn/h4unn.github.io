@@ -53,17 +53,33 @@ $(function(){
       }
    });
 
-   let $info_page =  $('.info_page');
-   // $info_page.load('https://irisbright.co.kr/default/ #container');
-   $.ajax({
-      url : "https://irisbright.co.kr/default/",
-      dataType : "html",
-      type : "get",  // post 또는 get
-      data : JSON,   // 호출할 url 에 있는 페이지로 넘길 파라메터
-      success : function(result){
-         $(".info_page").html(result);
-      }
+   var $modalWrap = $('#modal_wrap').find('.modal_close'),
+   $info_btn = $('#company_profile .profile_rel a'),
+   $modalItem = $('.modal_pop');
+
+   $info_btn.each(function(){
+      $(this).click(function(e){
+         e.preventDefault();
+         $('#modal_wrap').addClass('active');
+         var infoN = $(this).attr('data-num');
+         active_modal(infoN);
+      });
    });
+
+   $modalWrap.click(function(){
+      $('#modal_wrap').removeClass('active');
+      $modalItem.removeClass('active');
+   });
+
+   function active_modal(e){
+      $modalItem.each(function(){
+         var $modalN = $(this).attr('data-num');
+         if(e == $modalN){
+            $modalItem.removeClass('active');
+            $(this).addClass('active');
+         }
+      });
+   }
 });
 
 
