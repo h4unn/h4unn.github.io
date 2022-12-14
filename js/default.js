@@ -8,7 +8,7 @@ $(function(){
 
    var $container = $('#container');
    $(window).load(function(){
-      $({percent : 60}).animate({percent : 0},{
+      $({percent : 60}).delay(2000).animate({percent : 0},{
          duration:2000,
          progress:function(){
             var now = this.percent;
