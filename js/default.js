@@ -15,7 +15,7 @@ $(function(){
             $container.css({paddingTop: now});
          }
       });
-      // $container.delay(2000).animate({opacity:1},2000,'linear');
+      $container.delay(2000).animate({opacity:1},2000,'linear');
    });
 
    let $stackArea = $('#stack');
