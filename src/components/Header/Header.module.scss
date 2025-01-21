@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  li {
+    font-size: 2rem;
+  }
+}
