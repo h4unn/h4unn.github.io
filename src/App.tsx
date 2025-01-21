@@ -1,5 +1,3 @@
-import React from "react";
-
 import useRouteLoading from "./hook/useRouteLoading";
 import { AnimatePresence } from "framer-motion";
 
@@ -15,9 +13,9 @@ function App() {
 
   return (
     <>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isLoaded ? "" : <Loading count={loadingCount} />}
-      </AnimatePresence>
+      </AnimatePresence> */}
       <Layout>
         {isLoaded && (
           <TypeWrite text="신입 개발자 조현남입니다.<br/>사이트에 방문해 주셔서 감사합니다." />
