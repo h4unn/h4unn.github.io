@@ -12,4 +12,7 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "./src/components"),
     },
   },
+  server: {
+    port: 3000,
+  },
 });
