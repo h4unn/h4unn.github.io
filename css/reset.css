@@ -1,0 +1,187 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* custom */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+li {
+   list-style-type: none;
+}
+
+header,
+nav,
+section,
+article,
+footer,
+address {
+   display: block
+}
+
+fieldset,
+input,
+button {
+   border: none;
+}
+
+legend {
+   position: absolute;
+   left: -9999px;
+   font-size: 0;
+   display: block;
+   overflow: hidden;
+   width: 0px;
+}
+
+a:link,
+a:visited {
+   text-decoration: none;
+   cursor: pointer;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+   cursor: pointer;
+}
+
+em,
+i {
+   font-style: normal;
+}
+
+.inner {
+   max-width: 80%;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.clear::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+img {
+   max-width:100%;
+   border: 0;
+}
+
+/* Scripting
+       ========================================================================== */
+
+/**
+     * Add the correct display in IE 9-.
+     */
+
+canvas {
+   display: inline-block;
+}
+
+/**
+        * Add the correct display in IE.
+        */
+
+template {
+   display: none;
+}
+
+/* Hidden
+          ========================================================================== */
+
+/**
+        * Add the correct display in IE 10-.
+        */
+
+[hidden] {
+   display: none;
+}
+
+/* Interactive
+       ========================================================================== */
+
+/*
+     * Add the correct display in IE 9-.
+     * 1. Add the correct display in Edge, IE, and Firefox.
+     */
+
+details,
+/* 1 */
+menu {
+   display: block;
+}
+
+/*
+     * Add the correct display in all browsers.
+     */
+
+summary {
+   display: list-item;
+}
+
+/**
+     * 1. Add the correct box sizing in IE 10-.
+     * 2. Remove the padding in IE 10-.
+     */
+
+[type="checkbox"],
+[type="radio"] {
+   box-sizing: border-box;
+   /* 1 */
+   padding: 0;
+   /* 2 */
+}
+
+/**
+     * Restore the focus styles unset by the previous rule.
+     */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+   border: none;
+}
+
+/* Text-level semantics
+       ========================================================================== */
+
+/**
+     * 1. Remove the gray background on active links in IE 10.
+     * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+     */
+
+
+/**
+     * Remove the outline on focused links when they are also active or hovered
+     * in all browsers (opinionated).
+     */
+
+a:active,
+a:hover {
+   outline-width: 0;
+}
+
+/**
+     * Remove the border on images inside links in IE 10-.
+     */
+
+img {
+   border-style: none;
+}
