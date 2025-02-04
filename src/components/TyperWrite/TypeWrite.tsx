@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 
 import cn from "classnames/bind";
@@ -14,7 +15,7 @@ type TypeWriteProps = {
 export default function TypeWrite(props: TypeWriteProps) {
   const { text, delay, cursor } = props;
   return (
-    <div className={cx("TypeWrite")}>
+    <motion.div className={cx("TypeWrite")}>
       <Typewriter
         onInit={(typewriter) => {
           typewriter
@@ -23,11 +24,11 @@ export default function TypeWrite(props: TypeWriteProps) {
             .start();
         }}
         options={{
-          delay: 80,
+          delay: 40,
           loop: delay ? true : false,
           cursor: cursor || "|",
         }}
       />
-    </div>
+    </motion.div>
   );
 }

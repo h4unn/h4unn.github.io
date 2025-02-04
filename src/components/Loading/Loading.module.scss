@@ -12,6 +12,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
   }
 }

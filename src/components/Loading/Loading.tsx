@@ -1,7 +1,6 @@
 import cn from "classnames/bind";
-import { m } from "framer-motion";
 
-import TypeWrite from "../TyperWrite/TypeWrite";
+import LoadingIndicator from "../LoadingIndicator/LoadingIndicator";
 
 import styles from "./Loading.module.scss";
 
@@ -12,13 +11,11 @@ export default function Loading(props: { count?: number }) {
 
   return (
     <div className={cx("Loading")}>
-      <m.div className={cx("LoadingText")} exit={{ opacity: 0 }}>
-        <h2>
-          로딩중
-          <TypeWrite text={"..."} delay={1} cursor={""} />
-        </h2>
+      <div className={cx("LoadingText")}>
+        <LoadingIndicator />
+        <p>로딩중</p>
         <p>{count}</p>
-      </m.div>
+      </div>
     </div>
   );
 }

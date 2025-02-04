@@ -1,28 +1,26 @@
-import useRouteLoading from "./hook/useRouteLoading";
-import { AnimatePresence } from "framer-motion";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Layout from "./components/Layout/Layout";
-import Loading from "./components/Loading/Loading";
-import TypeWrite from "./components/TyperWrite/TypeWrite";
+import Home from "./pages/Home";
 
 import "./styles/index.scss";
 import "./styles/global.scss";
 
 function App() {
-  const { isLoaded, loadingCount } = useRouteLoading();
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+      ],
+    },
+  ]);
 
-  return (
-    <>
-      <Layout>
-        <AnimatePresence>
-          {isLoaded ? "" : <Loading count={loadingCount} />}
-        </AnimatePresence>
-        {isLoaded && (
-          <TypeWrite text="신입 개발자 조현남입니다.<br/>사이트에 방문해 주셔서 감사합니다." />
-        )}
-      </Layout>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
