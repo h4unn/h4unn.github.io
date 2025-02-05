@@ -3,16 +3,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import cn from "classnames/bind";
 import styles from "./HomeView.module.scss";
 
-import TypeWrite from "../components/TyperWrite/TypeWrite";
-import introImage from "../../public/images/introImag.png";
-import SectionLayout from "../components/UI/SectionLayout/SectionLayout";
+import TypeWrite from "../../components/TyperWrite/TypeWrite";
+import introImage from "../../../public/images/introImag.png";
+import SectionLayout from "../../components/UI/SectionLayout/SectionLayout";
 
 import { SiTistory, SiGithub } from "react-icons/si";
-import { SkillIcon } from "../components/Icon";
-import Html from "../assets/html.svg?react";
-import Lang from "../assets/lang.svg?react";
-import Db from "../assets/db.svg?react";
-import Devops from "../assets/deploy.svg?react";
+import { SkillIcon } from "../../components/Icon";
+import Html from "../../assets/html.svg?react";
+import Lang from "../../assets/lang.svg?react";
+import Db from "../../assets/db.svg?react";
+import Devops from "../../assets/deploy.svg?react";
 
 const cx = cn.bind(styles);
 const snsList = [
@@ -33,6 +33,7 @@ const HomeView = () => {
         <AnimatePresence>
           <TypeWrite text="신입 개발자 조현남입니다.<br/>사이트에 방문해 주셔서 감사합니다." />
         </AnimatePresence>
+        {/* intro */}
         <AnimatePresence>
           <motion.section
             className={cx("IntroSection")}
@@ -68,19 +69,11 @@ const HomeView = () => {
                 </ul>
               </div>
             </div>
-            {/* <div className={cx("About")}>
-            
-              <h2>ABOUT ME</h2>
-              <p>
-                이름: 조현남 <br />
-                생년월일: 1993.12.09 <br />
-                이메일: wiwi154@naver.com
-              </p>
-            </div> */}
           </motion.section>
         </AnimatePresence>
+        {/* skills */}
         <SectionLayout title="SKILLS">
-          <div className={cx("SkillList")}>
+          <div className={cx("SkillArea")}>
             <div className="Language">
               <h3>
                 <Lang width={32} height={32} />
@@ -178,7 +171,7 @@ const HomeView = () => {
             </div>
           </div>
         </SectionLayout>
-
+        {/* project */}
         <SectionLayout title="PROJECT">
           <div className="ProjectArea"></div>
         </SectionLayout>

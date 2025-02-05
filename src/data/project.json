@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p1",
+    "name": "Project 1",
+    "description": "This is project 1",
+    "image": "project1.jpg",
+    "url": "https://www.google.com",
+    "status": "active"
+  },
+  {
+    "id": "p2",
+    "name": "Project 2",
+    "description": "This is project 2",
+    "image": "project2.jpg",
+    "url": "https://www.google.com",
+    "status": "active"
+  },
+  {
+    "id": "p3",
+    "name": "Project 3",
+    "description": "This is project 3",
+    "image": "project3.jpg",
+    "url": "https://www.google.com",
+    "status": "active"
+  }
+]
