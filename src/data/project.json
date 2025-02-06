@@ -1,26 +1,93 @@
 [
   {
     "id": "p1",
-    "name": "Project 1",
-    "description": "This is project 1",
-    "image": "project1.jpg",
-    "url": "https://www.google.com",
-    "status": "active"
+    "title": "Tagheuer 리뉴얼 페이지",
+    "description": "시계 브랜드 리뉴얼 페이지 입니다. 기존 브랜드 페이지와 다르게 역동적인 표현을 하기 위해 제작하게 되었습니다.",
+    "date": "2022.02 ~ 2022.06",
+    "image": ["public/image/IB.png"],
+    "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
+    "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
+    "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
+    "status": "Person"
   },
   {
     "id": "p2",
-    "name": "Project 2",
-    "description": "This is project 2",
-    "image": "project2.jpg",
-    "url": "https://www.google.com",
-    "status": "active"
+    "title": "TVING 리뉴얼 페이지",
+    "description": "TVING 페이지의 UI 개선을 하기 위해 제작하였습니다.",
+    "date": "2022.08.22 ~ 2022.09.01",
+    "image": ["public/image/IB.png"],
+    "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
+    "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
+    "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
+    "status": "Person"
   },
   {
     "id": "p3",
-    "name": "Project 3",
-    "description": "This is project 3",
-    "image": "project3.jpg",
-    "url": "https://www.google.com",
-    "status": "active"
+    "title": "IRISBRIGHT(기업 소개페이지)",
+    "description": "",
+    "image": ["public/image/IB.png"],
+    "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
+    "url": "https://irisbright.co.kr/",
+    "works": [
+      "디자인 작업(60%)",
+      "퍼블리싱(100%)",
+      "유지보수",
+      "사용하지 않는 페이지 제거 및 section 통합",
+      "유지 보수를 위해 css,js 파일 병합"
+    ],
+    "status": "Company"
+  },
+  {
+    "id": "p4",
+    "title": "Y-free(쇼핑몰)",
+    "description": "",
+    "image": ["public/image/IB.png"],
+    "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
+    "url": "https://y-free.co.kr/",
+    "works": ["디자인 작업(10%)", "퍼블리싱(100%)"],
+    "status": "Company"
+  },
+  {
+    "id": "p5",
+    "title": "검진라인",
+    "description": "건강검진 예약 사이트",
+    "image": ["public/image/IB.png"],
+    "stack": ["html", "css", "javascript", "php", "wordpress", "formidable"],
+    "url": "https://sjcore.co.kr/",
+    "works": [
+      "디자인 작업(10%)",
+      "홈페이지 퍼플리싱(100%)",
+      "이미지 작업(100%)",
+      "데이터 이전 작업(100%)",
+      "관리자 기능 개선(100%)"
+    ],
+    "status": "Company"
+  },
+  {
+    "id": "p6",
+    "title": "MAN Truck",
+    "description": "",
+    "image": ["public/image/IB.png"],
+    "stack": ["html", "css", "javascript", "php", "wordpress", "formidable"],
+    "url": "https://sjcore.co.kr/",
+    "works": ["디자인 작업(60%)", "홈페이지 퍼플리싱(100%)"],
+    "status": "Company"
+  },
+  {
+    "id": "p7",
+    "title": "InfoSign",
+    "description": "wordpress를 활용한 사이니지 서비스 제작",
+    "image": ["public/image/IB.png"],
+    "stack": ["html", "css", "javascript", "php", "wordpress", "formidable"],
+    "url": "https://neosign.net/",
+    "works": [
+      "디자인 작업(60%)",
+      "홈페이지 퍼플리싱(100%)",
+      "Form 작업(100%)",
+      "데이터 값 송출(100%)",
+      "기능 작업(100%)",
+      "Chrome Extension 개발"
+    ],
+    "status": "Company"
   }
 ]
