@@ -1,0 +1,54 @@
+// SkkillsSection
+.SkillArea {
+  width: calc(100% - 180px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+
+  &>div {
+    display: flex;
+    gap: 4rem;
+
+    h3 {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .query {
+        font-size: .9rem;
+        padding: 2px 4px;
+        border-radius: 4px;
+        background-color: #FF4260;
+        color: var(--white);
+      }
+
+      .router {
+        font-size: .9rem;
+        padding: 2px 4px;
+        border-radius: 4px;
+        background-color: var(--gray-gray-30);
+        color: var(--white);
+      }
+
+      .styled {
+        font-size: .9rem;
+        padding: 2px 4px;
+        border-radius: 4px;
+        background-color: var(--gray-gray-30);
+        color: var(--white);
+      }
+    }
+  }
+
+}
