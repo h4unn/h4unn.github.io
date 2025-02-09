@@ -1,0 +1,26 @@
+.Button {
+  padding: 12px 8px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+
+
+  &.primary {
+    background-color: var(--primary-color);
+    border: transparent;
+    color: #fff;
+  }
+
+  &.outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+}
+
+.Button.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
