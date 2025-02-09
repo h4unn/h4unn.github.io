@@ -76,8 +76,6 @@ export default function TabContent(props: TabListProps) {
     setIsModalOpen(false);
   }
 
-  console.log(selectedItem, isModalOpen);
-
   return (
     <ul className={cx("TabContent", className)}>
       {projects.length > 0 ? (
@@ -89,11 +87,11 @@ export default function TabContent(props: TabListProps) {
       )}
       <Modal open={isModalOpen} onClose={handleModalClose}>
         {selectedItem && (
-          <div>
+          <>
             <h2>{selectedItem.title}</h2>
             <p>{selectedItem.description}</p>
             <span>{selectedItem.url}</span>
-          </div>
+          </>
         )}
       </Modal>
     </ul>

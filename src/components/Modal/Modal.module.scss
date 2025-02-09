@@ -1,26 +1,11 @@
 .Modal {
-  padding: 0;
-  z-index: 2;
   border-radius: 8px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   animation: slide-down-fade-in 0.3s ease-out forwards;
-}
 
-dialog {
-  padding: 0;
-  z-index: 2;
-  border-radius: 8px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  animation: slide-down-fade-in 0.3s ease-out forwards;
+  .ModalContainer {
+    padding: 20px 18px;
+  }
 }
 
 .Modal::backdrop {

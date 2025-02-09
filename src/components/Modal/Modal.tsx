@@ -39,13 +39,11 @@ export default function Modal({ open, children, onClose }: ModalProps) {
     };
   }, [onClose]);
 
-  console.log("Modal", open);
-
   return (
     open &&
     createPortal(
       <dialog className={cx("Modal")} ref={dialog} onClose={onClose}>
-        {open ? children : null}
+        <div className={cx("ModalContainer")}>{open ? children : null}</div>
       </dialog>,
       document.querySelector("#modal") as Element
     )

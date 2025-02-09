@@ -5,7 +5,7 @@
     "title": "Tagheuer 리뉴얼 페이지",
     "description": "시계 브랜드 리뉴얼 페이지 입니다.",
     "date": "2022.02 ~ 2022.06",
-    "image": [""],
+
     "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
     "works": [
       "디자인 작업(60%)",
@@ -24,7 +24,6 @@
     "logo": "../../public/images/tving_logo.png",
     "description": "TVING 페이지의 UI 개선을 하기 위해 제작하였습니다.",
     "date": "2022.08.22 ~ 2022.09.01",
-    "image": [""],
     "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
     "works": [
       "디자인 작업(60%)",
@@ -42,7 +41,8 @@
     "title": "IRISBRIGHT(기업 소개페이지)",
     "logo": "../../public/images/IB_logo.png",
     "description": "",
-    "image": ["public/image/IB.png"],
+    "date": "2022.02 ~ 2022.06",
+    "image": ["../../public/images/irisbright_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
     "url": "https://irisbright.co.kr/",
     "works": [
@@ -59,7 +59,8 @@
     "title": "Y-free(쇼핑몰)",
     "logo": "../../public/images/y_logo.png",
     "description": "",
-    "image": ["public/image/IB.png"],
+    "date": "2022.02 ~ 2022.06",
+    "image": ["../../public/images/y_free_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
     "url": "https://y-free.co.kr/",
     "works": ["디자인 작업(10%)", "퍼블리싱(100%)"],
@@ -70,7 +71,8 @@
     "title": "검진라인",
     "logo": "../../public/images/sjcore_logo.png",
     "description": "건강검진 예약 사이트",
-    "image": ["public/image/IB.png"],
+    "date": "2022.02 ~ 2022.06",
+    "image": ["../../public/images/sjcore_site.png"],
     "stack": [
       "html",
       "css",
@@ -94,7 +96,8 @@
     "title": "MAN Truck",
     "logo": "../../public/images/man_logo.png",
     "description": "",
-    "image": ["public/image/IB.png"],
+    "date": "2022.02 ~ 2022.06",
+    "image": ["../../public/images/mantruck_site.png"],
     "stack": [
       "html",
       "css",
@@ -112,7 +115,8 @@
     "title": "InfoSign",
     "logo": "../../public/images/neosign_logo.png",
     "description": "wordpress를 활용한 사이니지 서비스 제작",
-    "image": ["public/image/IB.png"],
+    "date": "2022.02 ~ 2022.06",
+    "image": ["../../public/images/neosign_site.png"],
     "stack": [
       "html",
       "css",
