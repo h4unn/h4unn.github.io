@@ -8,7 +8,6 @@ import TypeWrite from "../../components/TyperWrite/TypeWrite";
 import IntroSection from "../../sections/IntroSection/IntroSection";
 import SkillSection from "../../sections/SkillSection/SkillSection";
 import ProjectSection from "../../sections/ProjectSection/ProjectSection";
-import AnswerSection from "../../sections/Accordion/AnswerSection";
 
 const cx = cn.bind(styles);
 
@@ -22,8 +21,6 @@ const HomeView = () => {
       <SkillSection />
       {/* project */}
       <ProjectSection />
-      {/* accordion */}
-      <AnswerSection />
     </div>
   );
 };

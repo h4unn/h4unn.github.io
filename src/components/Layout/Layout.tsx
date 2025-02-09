@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-import Header from "../Header/Header";
+import Header from "../UI/Header/Header";
+import Footer from "../UI/Footer/Footer";
 import useRouteLoading from "../../hook/useRouteLoading";
 import Loading from "../Loading/Loading";
 
@@ -16,6 +17,7 @@ export default function Layout() {
       <div className={cx("Inner")}>
         <Header />
         <main>{isLoaded ? <Outlet /> : <Loading count={loadingCount} />}</main>
+        <Footer />
       </div>
     </div>
   );

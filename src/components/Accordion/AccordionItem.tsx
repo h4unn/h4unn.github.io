@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 
-const AccordionItemContext = createContext();
+const AccordionItemContext = createContext<string | undefined>(undefined);
 
 export function useAccordionItemContext() {
   const ctx = useContext(AccordionItemContext);
@@ -14,7 +14,17 @@ export function useAccordionItemContext() {
   return ctx;
 }
 
-export default function AccordionItem({ id, className, children }) {
+interface AccordionItemProps {
+  id: string;
+  className?: string;
+  children: React.ReactNode;
+}
+
+export default function AccordionItem({
+  id,
+  className,
+  children,
+}: AccordionItemProps) {
   return (
     <AccordionItemContext.Provider value={id}>
       <li className={className}>{children}</li>

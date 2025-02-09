@@ -4,7 +4,7 @@ export interface Project {
   logo?: string;
   description: string;
   date?: string;
-  image: string[];
+  image?: string[];
   stack: string[];
   url: string;
   pdf?: string;
