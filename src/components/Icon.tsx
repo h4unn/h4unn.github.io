@@ -1,8 +1,8 @@
-type IconProps = {
+export type IconProps = {
   name?: keyof typeof CDN_URL;
 };
 
-const CDN_URL = {
+export const CDN_URL = {
   html: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg",
   css: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg",
   javascript:
@@ -52,6 +52,9 @@ const CDN_URL = {
 };
 export function SkillIcon(props: IconProps) {
   const name = props.name;
-  if (name)
+  if (name) {
     return <img src={CDN_URL[name]} alt={name} width="32" height="32" />;
+  } else {
+    return undefined;
+  }
 }

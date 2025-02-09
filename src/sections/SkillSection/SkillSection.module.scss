@@ -25,6 +25,10 @@
       gap: 1rem;
       align-items: center;
 
+      & li {
+        white-space: nowrap;
+      }
+
       .query {
         font-size: .9rem;
         padding: 2px 4px;

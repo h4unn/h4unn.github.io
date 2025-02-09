@@ -1,5 +1,9 @@
+import cn from "classnames/bind";
+import styles from "./Modal.module.scss";
 import { useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
+
+const cx = cn.bind(styles);
 
 type ModalProps = {
   open: boolean;
@@ -20,13 +24,30 @@ export default function Modal({ open, children, onClose }: ModalProps) {
     }
   }, [open]);
 
+  useEffect(() => {
+    const handleBackdropClick = (event: MouseEvent) => {
+      if (dialog.current && event.target === dialog.current) {
+        onClose();
+      }
+    };
+
+    const currentDialog = dialog.current;
+    currentDialog?.addEventListener("click", handleBackdropClick);
+
+    return () => {
+      currentDialog?.removeEventListener("click", handleBackdropClick);
+    };
+  }, [onClose]);
+
+  console.log("Modal", open);
+
   return (
     open &&
     createPortal(
-      <dialog className="Modal" onClose={onClose}>
-        <div className="ModalContent">{open ? children : null}</div>
+      <dialog className={cx("Modal")} ref={dialog} onClose={onClose}>
+        {open ? children : null}
       </dialog>,
-      document.querySelector(".modal") as Element
+      document.querySelector("#modal") as Element
     )
   );
 }

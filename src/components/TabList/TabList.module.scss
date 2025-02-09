@@ -1,12 +1,21 @@
 .TabList {
   display: flex;
   flex-direction: column;
+  gap: 24px;
+}
+
+.TabContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
 }
 
 .ButtonArea {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .TabListButton {
@@ -19,5 +28,90 @@
 
   &.active {
     border-bottom: 1px solid #000;
+  }
+}
+
+.ProjectsItem {
+  box-sizing: border-box;
+  padding: 24px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  transition: ease all .3s;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.26);
+  }
+
+  .ProjectsLogoImage {
+    height: 30px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .ProjectTitle {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-bottom: 8px;
+    }
+
+    p {
+      font-size: .9rem;
+      color: var(--gray-gray-70);
+      padding-bottom: 8px;
+    }
+
+    .ProjectDate {
+      font-size: .9rem;
+      color: var(--gray-gray-70);
+      padding-bottom: 8px;
+    }
+  }
+
+  .ProjectStack {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: auto;
+
+    flex-wrap: wrap;
+
+    span {
+      padding: 4px 8px;
+      border-radius: 8px;
+      background-color: var(--gray-gray-30);
+      color: var(--white);
+      font-size: .9rem;
+    }
+  }
+
+  .ProjectWork {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & li {
+      padding-left: 12px;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--gray-gray-70);
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 import cn from "classnames/bind";
 import styles from "./Header.module.scss";
-import logo from "@public/images/logo.png";
+import logo from "@public/images/header_logo.png";
 import { SiTistory, SiGithub } from "react-icons/si";
 
 const cx = cn.bind(styles);

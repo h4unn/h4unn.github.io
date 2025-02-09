@@ -1,6 +1,7 @@
 import { useState } from "react";
 import cn from "classnames/bind";
 import styles from "./TabList.module.scss";
+import { SkillIcon, CDN_URL } from "../../components/Icon";
 
 import { Project } from "../../types/project.type";
 import { useTabListContext } from "./TabList";
@@ -25,14 +26,36 @@ const TabItem = ({
       className={cx("ProjectsItem")}
       onClick={() => handleFunc(item)}
     >
+      <div className={cx("ProjectsLogoImage")}>
+        <img src={item.logo} alt="" />
+      </div>
+
       <div className={cx("ProjectTitle")}>
-        <h2>{item.title}</h2>
+        <h3>{item.title}</h3>
         <p>{item.description}</p>
+        <span className={cx("ProjectDate")}>{item.date}</span>
       </div>
-      <div className={cx("ProjectsImage")}>
-        {/* <img src={item.image} alt={item.title} /> */}
+      <ul className={cx("ProjectWork")}>
+        {item.works
+          ? item.works.map((work) => (
+              <li key={work} className={cx("ProjectWorkItem")}>
+                {work}
+              </li>
+            ))
+          : null}
+      </ul>
+      <div className={cx("ProjectStack")}>
+        {item.stack.map((skill) => {
+          const skillIconExists = Object.keys(CDN_URL).includes(skill);
+          return skillIconExists ? (
+            <SkillIcon key={skill} name={skill as keyof typeof CDN_URL} />
+          ) : (
+            <span key={skill} className={cx(skill)}>
+              {skill}
+            </span>
+          );
+        })}
       </div>
-      <span className={cx("ProjectUrl")}>{item.url}</span>
     </li>
   );
 };
@@ -41,7 +64,7 @@ export default function TabContent(props: TabListProps) {
   const [selectedItem, setSelectedItem] = useState<Project | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const { className = "TabContent" } = props;
+  const { className } = props;
   const { projects } = useTabListContext();
 
   function handleModalOpen(item: Project) {
@@ -56,13 +79,13 @@ export default function TabContent(props: TabListProps) {
   console.log(selectedItem, isModalOpen);
 
   return (
-    <ul className={cx(className)}>
+    <ul className={cx("TabContent", className)}>
       {projects.length > 0 ? (
         projects.map((item) => (
           <TabItem key={item.id} item={item} handleFunc={handleModalOpen} />
         ))
       ) : (
-        <li className={cx("ProjectsItem")}>No projects</li>
+        <li className={cx("EmptyProject")}>No projects</li>
       )}
       <Modal open={isModalOpen} onClose={handleModalClose}>
         {selectedItem && (
