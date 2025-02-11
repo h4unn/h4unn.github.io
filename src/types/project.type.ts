@@ -6,8 +6,10 @@ export interface Project {
   date?: string;
   image?: string[];
   stack: string[];
-  url: string;
+  url?: string;
   pdf?: string;
-  works?: string[];
+  github?: string;
+  works: string[];
+  detail?: string[];
   status: string;
 }

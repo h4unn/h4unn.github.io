@@ -1,7 +1,12 @@
+import { motion } from "framer-motion";
+import cn from "classnames/bind";
+import styles from "./Accordion.module.scss";
 import { useAccordionContext } from "./Accordion.js";
 import { useAccordionItemContext } from "./AccordionItem.js";
 
 import { ReactNode } from "react";
+
+const cx = cn.bind(styles);
 
 interface AccordionContentProps {
   className?: string;
@@ -14,16 +19,36 @@ export default function AccordionContent({
 }: AccordionContentProps) {
   const { openItemId } = useAccordionContext();
   const id = useAccordionItemContext();
+  console.log(openItemId);
 
   const isOpen = openItemId === id;
+  console.log(isOpen);
 
   return (
-    <div
-      className={
-        isOpen ? `${className ?? ""} open` : `${className ?? ""} close`
-      }
+    <>
+      {isOpen ? (
+        <motion.div
+          className={cx("accordion-content", className)}
+          initial={{ height: 0, opacity: 0 }}
+          animate={{ height: "auto", opacity: 1 }}
+          exit={{ height: 0, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {children}
+        </motion.div>
+      ) : null}
+    </>
+  );
+}
+
+{
+  /* <motion.div
+      className={cx(className, isOpen ? `open` : `close`)}
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height: "auto", opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      transition={{ duration: 0.3 }}
     >
       {children}
-    </div>
-  );
+    </motion.div> */
 }

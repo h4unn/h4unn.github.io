@@ -1,8 +1,12 @@
+import cn from "classnames/bind";
+import styles from "./Accordion.module.scss";
 import { createContext, useContext, useState } from "react";
 
 import AccordionItem from "./AccordionItem.js";
 import AccordionTitle from "./AccordionTitle.js";
 import AccordionContent from "./AccordionContent.js";
+
+const cx = cn.bind(styles);
 
 interface AccordionContextType {
   openItemId: string | null;
@@ -33,8 +37,11 @@ interface AccordionProps {
   className?: string;
 }
 
-export default function Accordion({ children, className }: AccordionProps) {
-  const [openItemId, setOpenItemId] = useState<string | null>(null);
+export default function Accordion({
+  children,
+  className = "accordion",
+}: AccordionProps) {
+  const [openItemId, setOpenItemId] = useState<string | null>("experience");
 
   function toggleItem(id: string | null) {
     setOpenItemId((prevId) => (prevId === id ? null : id));
@@ -47,7 +54,7 @@ export default function Accordion({ children, className }: AccordionProps) {
 
   return (
     <AccordionContext.Provider value={contextValue}>
-      <ul className={className}>{children}</ul>
+      <ul className={cx(className)}>{children}</ul>
     </AccordionContext.Provider>
   );
 }

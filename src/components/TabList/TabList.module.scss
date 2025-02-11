@@ -24,9 +24,14 @@
   padding: 4px 8px;
   cursor: pointer;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 
-  &.active {
-    border-bottom: 1px solid #000;
+  .active-tab-indicator {
+
+    border: 1.5px solid var(--gray-gray-70);
+    border-radius: 8px;
   }
 }
 
@@ -73,46 +78,7 @@
     }
   }
 
-  .ProjectStack {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    margin-top: auto;
 
-    flex-wrap: wrap;
-
-    span {
-      padding: 4px 8px;
-      border-radius: 8px;
-      background-color: var(--gray-gray-30);
-      color: var(--white);
-      font-size: .9rem;
-    }
-  }
-
-  .ProjectWork {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    & li {
-      padding-left: 12px;
-      position: relative;
-
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: var(--gray-gray-70);
-      }
-    }
-  }
 }
 
 // modal children styles
@@ -121,85 +87,81 @@
   flex-direction: column;
   gap: 8px;
 
-  .ProjectsLogoImage {
-    max-width: 80px;
-  }
+  .ProjectsHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
-  .ProjectTitle {
-    h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      padding-bottom: 8px;
+    .ProjectLogo {
+      max-width: 80px;
+
+      img {
+        width: 100%;
+      }
     }
 
-    p {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .ProjectDesc,
+    .ProjectDate {
       font-size: .9rem;
       color: var(--gray-gray-70);
       padding-bottom: 8px;
     }
   }
 
-  .ProjectImages {
-    padding: 0 40px;
-    box-sizing: border-box;
+  .ProjectImage {
+    max-width: 525px;
   }
 
-  .ProjectDate {
-    font-size: .9rem;
-    color: var(--gray-gray-70);
-    padding-bottom: 8px;
-  }
 
-  .ProjectWork {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    h3 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      padding-bottom: 12px;
-    }
-
-    & li {
-      padding-left: 12px;
-      position: relative;
-
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: var(--gray-gray-70);
-      }
-    }
-  }
-
-  .ProjectStack {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    margin-top: auto;
-
-    flex-wrap: wrap;
-
-    span {
-      padding: 4px 8px;
-      border-radius: 8px;
-      background-color: var(--gray-gray-30);
-      color: var(--white);
-      font-size: .9rem;
-    }
-  }
 
   .ProjectsButton {
     display: flex;
     gap: 8px;
   }
+}
 
+.ProjectWork {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  & li {
+    padding-left: 12px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: var(--gray-gray-70);
+    }
+  }
+}
+
+.ProjectStack {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: auto;
+
+  flex-wrap: wrap;
+
+  span {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: var(--gray-gray-30);
+    color: var(--white);
+    font-size: .9rem;
+  }
 }

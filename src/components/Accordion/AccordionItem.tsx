@@ -1,4 +1,8 @@
+import cn from "classnames/bind";
+import styles from "./Accordion.module.scss";
 import { createContext, useContext } from "react";
+
+const cx = cn.bind(styles);
 
 const AccordionItemContext = createContext<string | undefined>(undefined);
 
@@ -27,7 +31,7 @@ export default function AccordionItem({
 }: AccordionItemProps) {
   return (
     <AccordionItemContext.Provider value={id}>
-      <li className={className}>{children}</li>
+      <li className={cx(className)}>{children}</li>
     </AccordionItemContext.Provider>
   );
 }

@@ -12,7 +12,6 @@ import ProjectData from "../../data/project.json";
 const cx = cn.bind(styles);
 
 export default function ProejectSection() {
-  console.log(ProjectData);
   return (
     <SectionLayout title="PROJECT">
       <div className={cx("ProjectArea")}>

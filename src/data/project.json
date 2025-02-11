@@ -16,6 +16,7 @@
     ],
     "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
     "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
+    "github": "https://github.com/h4unn/TagheuerSite",
     "status": "Person"
   },
   {
@@ -34,6 +35,7 @@
     ],
     "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
     "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
+    "github": "https://github.com/h4unn/TvingSite",
     "status": "Person"
   },
   {
@@ -52,6 +54,7 @@
       "사용하지 않는 페이지 제거 및 section 통합",
       "유지 보수를 위해 css,js 파일 병합"
     ],
+    "github": "",
     "status": "Company"
   },
   {
@@ -62,8 +65,9 @@
     "date": "2022.02 ~ 2022.06",
     "image": ["../../public/images/y_free_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
-    "url": "https://y-free.co.kr/",
     "works": ["디자인 작업(10%)", "퍼블리싱(100%)"],
+    "url": "https://y-free.co.kr/",
+    "github": "",
     "status": "Company"
   },
   {
@@ -82,6 +86,7 @@
       "formidable(wordpress plugin)"
     ],
     "url": "https://sjcore.co.kr/",
+    "github": "",
     "works": [
       "디자인 작업(10%)",
       "홈페이지 퍼플리싱(100%)",
@@ -107,6 +112,7 @@
       "formidable(wordpress plugin)"
     ],
     "url": "https://sjcore.co.kr/",
+    "github": "",
     "works": ["디자인 작업(60%)", "홈페이지 퍼플리싱(100%)"],
     "status": "Company"
   },
@@ -126,6 +132,7 @@
       "formidable(wordpress plugin)"
     ],
     "url": "https://neosign.net/",
+    "github": "",
     "works": [
       "디자인 작업(60%)",
       "홈페이지 퍼플리싱(100%)",

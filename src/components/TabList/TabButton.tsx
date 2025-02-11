@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import cn from "classnames/bind";
 import styles from "./TabList.module.scss";
 import { useTabListContext } from "./TabList";
@@ -17,6 +18,7 @@ export default function TabButton({
   function handleClick() {
     setSelectedTab(children as string);
   }
+  console.log(selectedTab);
 
   return (
     <>
@@ -28,6 +30,12 @@ export default function TabButton({
         onClick={handleClick}
       >
         {children}
+        {(children as string) === selectedTab && (
+          <motion.p
+            layoutId="tab-indicator"
+            className={cx("active-tab-indicator")}
+          />
+        )}
       </button>
     </>
   );
