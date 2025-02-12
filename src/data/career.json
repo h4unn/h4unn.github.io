@@ -1,0 +1,30 @@
+[
+  {
+    "company": "NEOMC",
+    "position": "Publisher",
+    "startDate": "2023-01-01",
+    "endDate": "2024-06",
+    "description": "웹 페이지 제작 및 유지관리"
+  },
+  {
+    "company": "IRISBRIGHT",
+    "position": "Publisher",
+    "startDate": "2022-10",
+    "endDate": "2022-12",
+    "description": "사이트 제작, 베너 디자인, 이미지 편집, 렌딩페이지 제작"
+  },
+  {
+    "company": "애드엔월드",
+    "position": "Marketer",
+    "startDate": "2020-01",
+    "endDate": "2023-02",
+    "description": "블로그 작성 템플릿, 체험단 관리, 방문 일정 관리, 업무 배분"
+  },
+  {
+    "company": "애드엔월드",
+    "position": "상품 관리",
+    "startDate": "2018-01",
+    "endDate": "2018-08",
+    "description": "상품 진열, 상품 입출 관리, 업무 배분, 상품 판매"
+  }
+]

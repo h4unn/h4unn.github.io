@@ -1,0 +1,46 @@
+.Career {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+
+  .CareerItem {
+    display: flex;
+
+    &>div {
+      flex: 1;
+    }
+
+    .CareerCompany {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      span {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      em {
+        font-size: .9rem;
+      }
+    }
+
+    .CareerContent {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .CareerPosition {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: .9rem;
+      }
+    }
+
+
+  }
+}

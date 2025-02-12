@@ -1,13 +1,9 @@
-import cn from "classnames/bind";
-import styles from "./AccordionSection.module.scss";
-
 import Accordion from "../../components/Accordion/Accordion";
-
-const cx = cn.bind(styles);
+import SectionLayout from "../../components/UI/SectionLayout/SectionLayout";
 
 export default function AccordionSection() {
   return (
-    <div className={cx("AccordionSection")}>
+    <SectionLayout title={"QnA"}>
       {/* Accordion */}
       <Accordion>
         <Accordion.Item id="experience" className="accordion-item">
@@ -42,6 +38,6 @@ export default function AccordionSection() {
           </Accordion.Content>
         </Accordion.Item>
       </Accordion>
-    </div>
+    </SectionLayout>
   );
 }

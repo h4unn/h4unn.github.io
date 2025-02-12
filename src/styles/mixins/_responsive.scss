@@ -80,6 +80,12 @@
   }
 }
 
+@mixin before($media) {
+  @media only screen and (max-width: getMinBreakpoint($media)) {
+    @content;
+  }
+}
+
 @mixin only($media) {
   @if $media ==M {
     @media only screen and (min-width: getMinBreakpoint(M)) and (max-width: getMaxBreakpoint(ML)) {

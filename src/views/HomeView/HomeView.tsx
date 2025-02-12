@@ -7,6 +7,7 @@ import TypeWrite from "../../components/TyperWrite/TypeWrite";
 
 import IntroSection from "../../sections/IntroSection/IntroSection";
 import SkillSection from "../../sections/SkillSection/SkillSection";
+import CareerSection from "../../sections/CareerSection/CareerSection";
 import ProjectSection from "../../sections/ProjectSection/ProjectSection";
 import AccordionSection from "../../sections/Accordion/AccordionSection";
 
@@ -20,6 +21,8 @@ const HomeView = () => {
       <IntroSection />
       {/* skill */}
       <SkillSection />
+      {/* career */}
+      <CareerSection />
       {/* project */}
       <ProjectSection />
       {/* accordion */}
