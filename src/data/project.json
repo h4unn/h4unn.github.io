@@ -1,7 +1,7 @@
 [
   {
     "id": "p1",
-    "logo": "../../public/images/tag_logo.png",
+    "logo": "./images/tag_logo.png",
     "title": "Tagheuer 리뉴얼 페이지",
     "description": "시계 브랜드 리뉴얼 페이지 입니다.",
     "date": "2022.02 ~ 2022.06",
@@ -14,19 +14,19 @@
       "사용하지 않는 페이지 제거 및 section 통합",
       "유지 보수를 위해 css,js 파일 병합"
     ],
-    "image": ["../../public/images/tagheuer_site.png"],
+    "image": ["./images/tagheuer_site.png"],
     "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
     "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
     "github": "https://github.com/h4unn/TagheuerSite",
-    "status": "Person"
+    "status": "Personal"
   },
   {
     "id": "p2",
     "title": "TVING 리뉴얼 페이지",
-    "logo": "../../public/images/tving_logo.png",
+    "logo": "./images/tving_logo.png",
     "description": "TVING 페이지의 UI 개선을 하기 위해 제작하였습니다.",
     "date": "2022.08.22 ~ 2022.09.01",
-    "image": ["../../public/images/tving_site.png"],
+    "image": ["./images/tving_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
     "works": [
       "디자인 작업(60%)",
@@ -38,15 +38,15 @@
     "url": "http://dotsisi154.dothome.co.kr/tving_renewal/index.php",
     "pdf": "http://dotsisi154.dothome.co.kr/Tving%EA%B8%B0%ED%9A%8D%EC%84%9C.pdf",
     "github": "https://github.com/h4unn/TvingSite",
-    "status": "Person"
+    "status": "Personal"
   },
   {
     "id": "p3",
     "title": "IRISBRIGHT(기업 소개페이지)",
-    "logo": "../../public/images/IB_logo.png",
+    "logo": "./images/IB_logo.png",
     "description": "",
     "date": "2022.02 ~ 2022.06",
-    "image": ["../../public/images/irisbright_site.png"],
+    "image": ["./images/irisbright_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
     "url": "https://irisbright.co.kr/",
     "works": [
@@ -62,10 +62,10 @@
   {
     "id": "p4",
     "title": "Y-free(쇼핑몰)",
-    "logo": "../../public/images/y_logo.png",
+    "logo": "./images/y_logo.png",
     "description": "",
     "date": "2022.02 ~ 2022.06",
-    "image": ["../../public/images/y_free_site.png"],
+    "image": ["./images/y_free_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
     "works": ["디자인 작업(10%)", "퍼블리싱(100%)"],
     "url": "https://y-free.co.kr/",
@@ -75,10 +75,10 @@
   {
     "id": "p5",
     "title": "검진라인",
-    "logo": "../../public/images/sjcore_logo.png",
+    "logo": "./images/sjcore_logo.png",
     "description": "건강검진 예약 사이트",
     "date": "2022.02 ~ 2022.06",
-    "image": ["../../public/images/sjcore_site.png"],
+    "image": ["./images/sjcore_site.png"],
     "stack": [
       "html",
       "css",
@@ -101,10 +101,10 @@
   {
     "id": "p6",
     "title": "MAN Truck",
-    "logo": "../../public/images/man_logo.png",
+    "logo": "./images/man_logo.png",
     "description": "",
     "date": "2022.02 ~ 2022.06",
-    "image": ["../../public/images/mantruck_site.png"],
+    "image": ["./images/mantruck_site.png"],
     "stack": [
       "html",
       "css",
@@ -121,10 +121,10 @@
   {
     "id": "p7",
     "title": "InfoSign",
-    "logo": "../../public/images/neosign_logo.png",
+    "logo": "./images/neosign_logo.png",
     "description": "wordpress를 활용한 사이니지 서비스 제작",
     "date": "2022.02 ~ 2022.06",
-    "image": ["../../public/images/neosign_site.png"],
+    "image": ["./images/neosign_site.png"],
     "stack": [
       "html",
       "css",

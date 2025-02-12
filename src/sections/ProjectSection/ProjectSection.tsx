@@ -17,9 +17,9 @@ export default function ProejectSection() {
       <div className={cx("ProjectArea")}>
         <TabList data={ProjectData}>
           <div className={cx("ButtonArea")}>
-            <TabButton>Person</TabButton>
+            <TabButton>Personal</TabButton>
             <TabButton>Company</TabButton>
-            <TabButton>Auther</TabButton>
+            <TabButton>Etc</TabButton>
           </div>
           <TabContent />
         </TabList>

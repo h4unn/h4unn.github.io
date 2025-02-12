@@ -31,7 +31,7 @@ export function useTabListContext() {
 }
 
 export default function TabList({ className, children, data }: TabListProps) {
-  const [selectedTab, setSelectedTab] = useState("Person");
+  const [selectedTab, setSelectedTab] = useState("Personal");
   const [projects, setProjects] = useState<Project[]>(
     data!.filter((item) => item.status == selectedTab) || []
   );
