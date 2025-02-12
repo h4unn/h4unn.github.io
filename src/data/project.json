@@ -14,6 +14,7 @@
       "사용하지 않는 페이지 제거 및 section 통합",
       "유지 보수를 위해 css,js 파일 병합"
     ],
+    "image": ["../../public/images/tagheuer_site.png"],
     "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
     "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
     "github": "https://github.com/h4unn/TagheuerSite",
@@ -25,6 +26,7 @@
     "logo": "../../public/images/tving_logo.png",
     "description": "TVING 페이지의 UI 개선을 하기 위해 제작하였습니다.",
     "date": "2022.08.22 ~ 2022.09.01",
+    "image": ["../../public/images/tving_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
     "works": [
       "디자인 작업(60%)",
@@ -33,8 +35,8 @@
       "사용하지 않는 페이지 제거 및 section 통합",
       "유지 보수를 위해 css,js 파일 병합"
     ],
-    "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
-    "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
+    "url": "http://dotsisi154.dothome.co.kr/tving_renewal/index.php",
+    "pdf": "http://dotsisi154.dothome.co.kr/Tving%EA%B8%B0%ED%9A%8D%EC%84%9C.pdf",
     "github": "https://github.com/h4unn/TvingSite",
     "status": "Person"
   },
