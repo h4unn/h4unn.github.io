@@ -1,11 +1,17 @@
+@use "@/styles/mixins/_responsive.scss";
+
 .SectionLayout {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 20px;
 
   &>h2 {
     font-size: 2rem;
     position: relative;
+
+    @include responsive.before(SD) {
+      padding-bottom: 20px;
+    }
 
     &::after {
       content: '';
@@ -17,6 +23,13 @@
       bottom: 50%;
       right: 0;
       transform: translateY(50%);
+
+      @include responsive.before(SD) {
+        width: 100%;
+        bottom: 0;
+        transform: translateY(0);
+      }
+
     }
   }
 
@@ -33,6 +46,10 @@
       flex-wrap: wrap;
       gap: 1rem;
       flex-direction: column;
+
+      @include responsive.before(MD) {
+        width: 100%;
+      }
     }
   }
 

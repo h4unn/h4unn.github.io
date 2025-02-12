@@ -1,3 +1,5 @@
+@use "@/styles/mixins/_responsive.scss";
+
 .TabList {
   display: flex;
   flex-direction: column;
@@ -8,6 +10,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
+
+  @include responsive.before(SD) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .ButtonArea {
@@ -85,7 +91,11 @@
 .ProjectsModal {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 20px;
+
+  @include responsive.before(MD) {
+    gap: 12px;
+  }
 
   .ProjectsHeader {
     display: flex;
@@ -115,6 +125,11 @@
 
   .ProjectImage {
     max-width: 525px;
+
+    @include responsive.before(MD) {
+      max-width: 100%;
+    }
+
   }
 
 

@@ -1,6 +1,7 @@
+@use "@/styles/mixins/_responsive.scss";
+
 // SkkillsSection
 .SkillArea {
-  width: calc(100% - 180px);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -10,10 +11,19 @@
     display: flex;
     gap: 4rem;
 
+    @include responsive.before(SD) {
+      flex-direction: column;
+      gap: 12px;
+    }
+
     h3 {
       display: flex;
       gap: 2rem;
       align-items: center;
+
+      @include responsive.before(SD) {
+        gap: 1rem;
+      }
 
       span {
         font-weight: 700;
@@ -24,6 +34,9 @@
       display: flex;
       gap: 1rem;
       align-items: center;
+      flex-wrap: wrap;
+
+
 
       & li {
         white-space: nowrap;

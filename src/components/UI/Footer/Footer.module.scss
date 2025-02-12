@@ -1,9 +1,20 @@
+@use "@/styles/mixins/_responsive.scss";
+
 .Contact {
   padding-top: 2rem;
 
   .Inner {
     display: flex;
     justify-content: space-between;
+
+    @include responsive.before(SD) {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+      padding-bottom: 2rem;
+    }
+
+
 
     .IntroDuce {
       h5 {
@@ -20,6 +31,8 @@
 
     .contactInfo {
       text-align: center;
+
+
 
       li {
         padding-bottom: 10px;

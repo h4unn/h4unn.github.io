@@ -1,3 +1,5 @@
+@use "@/styles/mixins/_responsive.scss";
+
 .Modal {
   position: fixed;
   top: 50%;
@@ -9,6 +11,10 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: white;
   z-index: 1000;
+
+  @include responsive.before(MD) {
+    width: 80%;
+  }
 
   &::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
