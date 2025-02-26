@@ -1,18 +1,69 @@
 [
   {
+    "id": "p8",
+    "title": "h4unn Music",
+    "logo": "./images/h4unn_music_logo.png",
+    "description": "음악 사이트 토이 프로젝트",
+    "date": "2025.02,15 ~ 2022.02.20",
+    "image": ["./images/music_site.png"],
+    "stack": [
+      "react",
+      "typescript",
+      "sass",
+      "recoil",
+      "axios",
+      "tanstack-query",
+      "react-router",
+      "youtube-api",
+      "vercel"
+    ],
+    "url": "https://h4unn-play.vercel.app/",
+    "github": "https://github.com/h4unn/h4unn-play",
+    "works": ["디자인 작업(100%)", "퍼블리싱(100%)", "API 연동", "프론트 배포"],
+    "workDetail": [
+      "YouTube API를 통해 실시간 영상 데이터를 불러와 최신 콘텐츠를 제공했습니다.",
+      "Recoil로 사용자가 선택한 영상을 목록에 저장하고 쉽게 접근할 수 있도록 상태 관리를 구현했습니다.",
+      "YouTube 영상 검색 기능을 최적화해 사용자가 원하는 콘텐츠를 쉽게 찾을 수 있게 했습니다.",
+      "YouTube 채널 정보를 불러와 사용자에게 상세한 채널 정보를 제공했습니다."
+    ],
+    "status": "Personal"
+  },
+  {
+    "id": "p9",
+    "title": "Hopital 예약 사이트",
+    "logo": "",
+    "description": "간편한 건강 검진 예약 프로젝트",
+    "date": "2025.02,15 ~ 2022.02.20",
+    "image": ["./images/music_site.png"],
+    "stack": [
+      "nextjs",
+      "typescript",
+      "sass",
+      "react-hook-form",
+      "tanstack-query",
+      "vercel",
+      "aws"
+    ],
+    "url": "https://h4unn-play.vercel.app/",
+    "github": "https://github.com/h4unn/h4unn-play",
+    "works": ["디자인 작업(100%)", "퍼블리싱(100%)", "DB 연동", "배포"],
+    "workDetail": [
+      "YouTube API를 통해 실시간 영상 데이터를 불러와 최신 콘텐츠를 제공했습니다.",
+      "Recoil로 사용자가 선택한 영상을 목록에 저장하고 쉽게 접근할 수 있도록 상태 관리를 구현했습니다.",
+      "YouTube 영상 검색 기능을 최적화해 사용자가 원하는 콘텐츠를 쉽게 찾을 수 있게 했습니다.",
+      "YouTube 채널 정보를 불러와 사용자에게 상세한 채널 정보를 제공했습니다."
+    ],
+    "state": "제작중",
+    "status": "Personal"
+  },
+  {
     "id": "p1",
     "logo": "./images/tag_logo.png",
     "title": "Tagheuer 리뉴얼 페이지",
     "description": "시계 브랜드 리뉴얼 페이지 입니다.",
     "date": "2022.02 ~ 2022.06",
     "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
-    "works": [
-      "디자인 작업(60%)",
-      "퍼블리싱(100%)",
-      "유지보수",
-      "사용하지 않는 페이지 제거 및 section 통합",
-      "유지 보수를 위해 css,js 파일 병합"
-    ],
+    "works": ["디자인 작업(100%)", "퍼블리싱(100%)"],
     "image": ["./images/tagheuer_site.png"],
     "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
     "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
@@ -27,13 +78,7 @@
     "date": "2022.08.22 ~ 2022.09.01",
     "image": ["./images/tving_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
-    "works": [
-      "디자인 작업(60%)",
-      "퍼블리싱(100%)",
-      "유지보수",
-      "사용하지 않는 페이지 제거 및 section 통합",
-      "유지 보수를 위해 css,js 파일 병합"
-    ],
+    "works": ["디자인 작업(100%)", "퍼블리싱(100%)"],
     "url": "http://dotsisi154.dothome.co.kr/tving_renewal/index.php",
     "pdf": "http://dotsisi154.dothome.co.kr/Tving%EA%B8%B0%ED%9A%8D%EC%84%9C.pdf",
     "github": "https://github.com/h4unn/TvingSite",
@@ -48,14 +93,7 @@
     "image": ["./images/irisbright_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
     "url": "https://irisbright.co.kr/",
-    "works": [
-      "디자인 작업(60%)",
-      "퍼블리싱(100%)",
-      "유지보수",
-      "사용하지 않는 페이지 제거 및 section 통합",
-      "유지 보수를 위해 css,js 파일 병합"
-    ],
-    "github": "",
+    "works": ["디자인 작업(60%)", "퍼블리싱(100%)"],
     "status": "Company"
   },
   {
@@ -68,7 +106,6 @@
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
     "works": ["디자인 작업(10%)", "퍼블리싱(100%)"],
     "url": "https://y-free.co.kr/",
-    "github": "",
     "status": "Company"
   },
   {
@@ -76,7 +113,7 @@
     "title": "검진라인",
     "logo": "./images/sjcore_logo.png",
     "description": "건강검진 예약 사이트",
-    "date": "2022.02 ~ 2022.06",
+    "date": "2023.01 ~ 2024.06",
     "image": ["./images/sjcore_site.png"],
     "stack": [
       "html",
@@ -93,7 +130,8 @@
       "홈페이지 퍼플리싱(100%)",
       "이미지 작업(100%)",
       "데이터 이전 작업(100%)",
-      "관리자 기능 개선(100%)"
+      "관리자 기능 개선(100%)",
+      "유지보수"
     ],
     "status": "Company"
   },
@@ -112,9 +150,8 @@
       "wordpress",
       "formidable(wordpress plugin)"
     ],
-    "url": "https://sjcore.co.kr/",
-    "github": "",
-    "works": ["디자인 작업(60%)", "홈페이지 퍼플리싱(100%)"],
+    "url": "https://mantruck.co.kr/",
+    "works": ["디자인 작업(60%)", "홈페이지 퍼플리싱(100%)", "유지보수"],
     "status": "Company"
   },
   {
@@ -122,7 +159,7 @@
     "title": "InfoSign",
     "logo": "./images/neosign_logo.png",
     "description": "wordpress를 활용한 사이니지 서비스 제작",
-    "date": "2022.02 ~ 2022.06",
+    "date": "2023.05 ~ 2024.06",
     "image": ["./images/neosign_site.png"],
     "stack": [
       "html",
@@ -133,9 +170,8 @@
       "formidable(wordpress plugin)"
     ],
     "url": "https://neosign.net/",
-    "github": "",
     "works": [
-      "디자인 작업(60%)",
+      "디자인 작업(50%)",
       "홈페이지 퍼플리싱(100%)",
       "Form 작업(100%)",
       "데이터 값 송출(100%)",
@@ -143,23 +179,5 @@
       "Chrome Extension 개발"
     ],
     "status": "Company"
-  },
-  {
-    "id": "p8",
-    "title": "h4unn Music",
-    "logo": "./images/h4unn_music_logo.png",
-    "description": "음악 사이트 토이 프로젝트",
-    "date": "2025.02 ~ 2022.02.15",
-    "image": ["./images/music_site.png"],
-    "stack": ["javascript", "react", "scss", "tanstack-query", "react-router"],
-    "github": "",
-    "works": [
-      "YouTube API를 통해 실시간 영상 데이터를 불러와 최신 콘텐츠를 제공했습니다.",
-      "Zustand로 사용자가 선택한 영상을 목록에 저장하고 쉽게 접근할 수 있도록 상태 관리를 구현했습니다.",
-      "YouTube 영상 검색 기능을 최적화해 사용자가 원하는 콘텐츠를 쉽게 찾을 수 있게 했습니다.",
-      "YouTube 채널 정보를 불러와 사용자에게 상세한 채널 정보를 제공했습니다.",
-      "실시간 댓글 확인 기능을 통해 사용자들이 영상 관련 의견을 확인하고 참여할 수 있도록 했습니다."
-    ],
-    "status": "Personal"
   }
 ]

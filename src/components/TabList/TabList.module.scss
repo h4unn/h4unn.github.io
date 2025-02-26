@@ -51,6 +51,7 @@
   flex-direction: column;
   gap: 24px;
   cursor: pointer;
+  position: relative;
 
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.26);
@@ -82,6 +83,17 @@
       color: var(--gray-gray-70);
       padding-bottom: 8px;
     }
+  }
+
+  .ProjectBadge {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: var(--gray-gray-30);
+    color: var(--white);
+    font-size: .9rem;
   }
 
 
@@ -124,8 +136,6 @@
   }
 
   .ProjectImage {
-    max-width: 525px;
-
     @include responsive.before(MD) {
       max-width: 100%;
     }

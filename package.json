@@ -19,6 +19,7 @@
     "imagesloaded": "^5.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icon": "^1.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.5",
     "scss": "^0.2.4",

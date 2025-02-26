@@ -18,7 +18,6 @@ export default function TabButton({
   function handleClick() {
     setSelectedTab(children as string);
   }
-  console.log(selectedTab);
 
   return (
     <>

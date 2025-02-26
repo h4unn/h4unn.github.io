@@ -19,7 +19,6 @@ export default function ProejectSection() {
           <div className={cx("ButtonArea")}>
             <TabButton>Personal</TabButton>
             <TabButton>Company</TabButton>
-            <TabButton>Etc</TabButton>
           </div>
           <TabContent />
         </TabList>

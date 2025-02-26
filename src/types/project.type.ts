@@ -10,6 +10,7 @@ export interface Project {
   pdf?: string;
   github?: string;
   works: string[];
-  detail?: string[];
+  workDetail?: string[];
+  state?: string;
   status: string;
 }

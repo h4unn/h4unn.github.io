@@ -5,8 +5,9 @@ import { SkillIcon, CDN_URL } from "../../components/Icon";
 
 import { Project } from "../../types/project.type";
 import { useTabListContext } from "./TabList";
-import Modal from "../Modal/Modal";
 import { Button } from "../Button/Button";
+import Badge from "../Badge/Badge";
+import Modal from "../Modal/Modal";
 
 const cx = cn.bind(styles);
 
@@ -57,6 +58,7 @@ const TabItem = ({
           );
         })}
       </div>
+      {item.state && <Badge className={cx("ProjectBadge")}>{item.state}</Badge>}
     </li>
   );
 };
@@ -106,7 +108,7 @@ export default function TabContent(props: TabListProps) {
               </div>
             )}
             <ul className={cx("ProjectWork")}>
-              {selectedItem.works.map((work, idx) => (
+              {selectedItem.workDetail?.map((work, idx) => (
                 <li key={idx} className={cx("ProjectWorkItem")}>
                   {work}
                 </li>
