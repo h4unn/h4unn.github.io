@@ -78,6 +78,7 @@ export default function TabContent(props: TabListProps) {
     setSelectedItem(null);
     setIsModalOpen(false);
   }
+  console.log(projects);
 
   return (
     <ul className={cx("TabContent", className)}>
