@@ -54,7 +54,7 @@
       "간편하게 병원 예약 서비를 제공하기 위해 react-hook-form을 사용해 폼을 구현했습니다.",
       "Tanstack-query를 사용해 데이터를 관리하고 최적화했습니다."
     ],
-    "state": "제작중(aws 에러 수정중)",
+    "state": "제작중(DB 연동 에러 수정중)",
     "status": "Project"
   },
   {
