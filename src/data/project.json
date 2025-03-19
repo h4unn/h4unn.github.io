@@ -26,7 +26,7 @@
       "YouTube 영상 검색 기능을 최적화해 사용자가 원하는 콘텐츠를 쉽게 찾을 수 있게 했습니다.",
       "YouTube 채널 정보를 불러와 사용자에게 상세한 채널 정보를 제공했습니다."
     ],
-    "status": "Personal"
+    "status": "Project"
   },
   {
     "id": "p9",
@@ -39,6 +39,7 @@
       "nextjs",
       "typescript",
       "sass",
+      "zustand",
       "react-hook-form",
       "tanstack-query",
       "vercel",
@@ -53,7 +54,7 @@
       "Tanstack-query를 사용해 데이터를 관리하고 최적화했습니다."
     ],
     "state": "제작중",
-    "status": "Personal"
+    "status": "Project"
   },
   {
     "id": "p1",
@@ -62,12 +63,23 @@
     "description": "시계 브랜드 리뉴얼 페이지 입니다.",
     "date": "2022.02 ~ 2022.06",
     "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
-    "works": ["디자인 작업(100%)", "퍼블리싱(100%)"],
+    "works": [
+      "디자인 작업(100%)",
+      "퍼블리싱(100%)",
+      "로그인 기능",
+      "데이터베이스 구축"
+    ],
+    "workDetail": [
+      "디자인 작업을 통해 브랜드 이미지를 강조하고 사용자에게 더 나은 경험을 제공했습니다.",
+      "mysql를 활용하여 데이터를 관리하고 불러왔습니다.",
+      "php를 사용하여 데이터베이스를 구축하고 데이터를 관리했습니다.",
+      "jQuery를 사용하여 사용자와의 상호작용을 높였습니다."
+    ],
     "image": ["./images/tagheuer_site.png"],
     "url": "http://dotsisi154.dothome.co.kr/tagheuer/index.html",
     "pdf": "http://dotsisi154.dothome.co.kr/ChoHyunName_ppt.pdf",
     "github": "https://github.com/h4unn/TagheuerSite",
-    "status": "Personal"
+    "status": "Project"
   },
   {
     "id": "p2",
@@ -78,10 +90,13 @@
     "image": ["./images/tving_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "php", "mysql"],
     "works": ["디자인 작업(100%)", "퍼블리싱(100%)"],
+    "workDetail": [
+      "디자인 작업을 통해 사용자가 더 쉽게 서비스를 이용할 수 있도록 UI를 개선했습니다."
+    ],
     "url": "http://dotsisi154.dothome.co.kr/tving_renewal/index.php",
     "pdf": "http://dotsisi154.dothome.co.kr/Tving%EA%B8%B0%ED%9A%8D%EC%84%9C.pdf",
     "github": "https://github.com/h4unn/TvingSite",
-    "status": "Personal"
+    "status": "Project"
   },
   {
     "id": "p3",
@@ -93,6 +108,7 @@
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
     "url": "https://irisbright.co.kr/",
     "works": ["디자인 작업(60%)", "퍼블리싱(100%)"],
+    "workDetail": ["cafe24를 활용하여 기업 소개 페이지를 제작하였습니다"],
     "status": "Company"
   },
   {
@@ -104,7 +120,50 @@
     "image": ["./images/y_free_site.png"],
     "stack": ["html", "css", "javascript", "jQuery", "카페 24"],
     "works": ["디자인 작업(10%)", "퍼블리싱(100%)"],
-    "url": "https://y-free.co.kr/",
+    "workDetail": [
+      "cafe24를 활용하여 쇼핑몰을 제작하였습니다",
+      "디자인 작업을 통해 브랜드 이미지를 강조하였습니다.",
+      "jQuery를 사용하여 모션 효과를 추가하였습니다."
+    ],
+    "url": "https://yfree.co.kr/",
+    "status": "Company"
+  },
+  {
+    "id": "p8",
+    "title": "Benz(kccauto)",
+    "logo": "./images/kccauto_logo.png",
+    "description": "AEM을 활용하여 사이트 유지 보수 업무",
+    "date": "2023.01 ~ 2024.06",
+    "image": ["./images/kccauto_site.png"],
+    "stack": ["AEM"],
+    "url": "https://www.kccauto.co.kr/",
+    "works": ["AEM form module 작업", "홈페이지 유지보수"],
+    "workDetail": ["AEM을 활용하여 사이트 유지보수 업무를 진행하였습니다."],
+    "status": "Company"
+  },
+
+  {
+    "id": "p6",
+    "title": "MAN Truck",
+    "logo": "./images/man_logo.png",
+    "description": "",
+    "date": "2022.02 ~ 2022.06",
+    "image": ["./images/mantruck_site.png"],
+    "stack": [
+      "html",
+      "css",
+      "javascript",
+      "php",
+      "wordpress",
+      "formidable(wordpress plugin)"
+    ],
+    "url": "https://mantruck.co.kr/",
+    "works": ["디자인 작업(60%)", "홈페이지 퍼플리싱(100%)", "유지보수"],
+    "workDetail": [
+      "홈페이지 리뉴얼 작업을 통해 사용자가 더 쉽게 서비스를 이용할 수 있도록 UI를 개선했습니다.",
+      "엑셀로 정리된 부품관련 데이터를 불러와 사용자에게 제공하도록 구현하였습니다.",
+      "만드럭 관련 기사를 업데이트 하였습니다."
+    ],
     "status": "Company"
   },
   {
@@ -125,32 +184,18 @@
     "url": "https://sjcore.co.kr/",
     "github": "",
     "works": [
-      "디자인 작업(10%)",
       "홈페이지 퍼플리싱(100%)",
       "이미지 작업(100%)",
       "데이터 이전 작업(100%)",
       "관리자 기능 개선(100%)",
       "유지보수"
     ],
-    "status": "Company"
-  },
-  {
-    "id": "p6",
-    "title": "MAN Truck",
-    "logo": "./images/man_logo.png",
-    "description": "",
-    "date": "2022.02 ~ 2022.06",
-    "image": ["./images/mantruck_site.png"],
-    "stack": [
-      "html",
-      "css",
-      "javascript",
-      "php",
-      "wordpress",
-      "formidable(wordpress plugin)"
+    "workDetail": [
+      "wordpress의 formidable plugin을 사용하여 예약 기능을 구현하였습니다.",
+      "복잡한 코드를 정리하고 유지보수를 용이하게 하기 위해 리팩토링 작업을 진행하였습니다.",
+      "관리자 페이지를 개선하여 예약자 상태를 bulk 처리할 수 있도록 기능을 추가하였습니다."
     ],
-    "url": "https://mantruck.co.kr/",
-    "works": ["디자인 작업(60%)", "홈페이지 퍼플리싱(100%)", "유지보수"],
+
     "status": "Company"
   },
   {
@@ -177,6 +222,12 @@
       "기능 작업(100%)",
       "Chrome Extension 개발"
     ],
+    "workDetail": [
+      "wordpress를 활용하여 사이니지 서비스를 제작하였습니다.",
+      "Formidable plugin을 사용하여 사용자가 원하는 데이터를 입력하고 제출할 수 있도록 구현하였습니다.",
+      "Chrome Extension을 개발하여 사용자가 원하는 데이터를 손쉽게 입력할 수 있도록 구현하였습니다."
+    ],
+
     "status": "Company"
   }
 ]

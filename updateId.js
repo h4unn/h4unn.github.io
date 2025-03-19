@@ -15,5 +15,3 @@ data.forEach((project) => {
 
 // 변경된 데이터를 다시 data.json 파일에 쓰기
 fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2));
-
-console.log("IDs have been updated with UUIDs.");

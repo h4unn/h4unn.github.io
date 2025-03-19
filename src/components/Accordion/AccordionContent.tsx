@@ -19,10 +19,8 @@ export default function AccordionContent({
 }: AccordionContentProps) {
   const { openItemId } = useAccordionContext();
   const id = useAccordionItemContext();
-  console.log(openItemId);
 
   const isOpen = openItemId === id;
-  console.log(isOpen);
 
   return (
     <>

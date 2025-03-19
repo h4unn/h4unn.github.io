@@ -25,6 +25,7 @@
 
 .TabListButton {
   border: none;
+  font-size: 1rem;
   background-color: inherit;
   display: inline-block;
   padding: 4px 8px;
@@ -33,10 +34,14 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  color: var(--gray-gray-70);
+
+  &.active {
+    color: var(--gray-gray-10);
+  }
 
   .active-tab-indicator {
-
-    border: 1.5px solid var(--gray-gray-70);
+    border: 1.5px solid var(--gray-gray-10);
     border-radius: 8px;
   }
 }
@@ -140,6 +145,10 @@
       max-width: 100%;
     }
 
+    img {
+      width: 100%;
+    }
+
   }
 
 
@@ -147,6 +156,18 @@
   .ProjectsButton {
     display: flex;
     gap: 8px;
+
+    button {
+      padding: 18px 0;
+      transition: .3s ease all;
+      border: 1px solid #000;
+      background-color: #000;
+
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+    }
   }
 }
 

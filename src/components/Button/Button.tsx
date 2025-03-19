@@ -1,13 +1,3 @@
-/*
-## Button 컴포넌트
-
-### 사용 방법
-
-variant -> primary : 기본 (배경 primary-color, 글자색 : #fff)
-variant -> outline : 테두리만 있는 버튼
-
-*/
-
 import React from "react";
 import cn from "classnames/bind";
 import styles from "./Button.module.scss";
