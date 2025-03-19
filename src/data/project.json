@@ -33,7 +33,7 @@
     "title": "Hopital 예약 사이트",
     "logo": "./images/easycare_logo.png",
     "description": "간편한 건강 검진 예약 프로젝트",
-    "date": "2025.02,15 ~ 2022.02.20",
+    "date": "2025.3.01 ~ ",
     "image": ["./images/easycare_site.png"],
     "stack": [
       "nextjs",
@@ -46,6 +46,7 @@
       "aws"
     ],
     "github": "https://github.com/reservation-hospital",
+    "url": "https://hospital-project-snowy.vercel.app/",
     "works": ["디자인 작업(100%)", "퍼블리싱(100%)", "DB 연동", "배포"],
     "workDetail": [
       "Next.js를 사용해 서버사이드 렌더링을 구현했습니다.",
@@ -53,7 +54,7 @@
       "간편하게 병원 예약 서비를 제공하기 위해 react-hook-form을 사용해 폼을 구현했습니다.",
       "Tanstack-query를 사용해 데이터를 관리하고 최적화했습니다."
     ],
-    "state": "제작중",
+    "state": "제작중(aws 에러 수정중)",
     "status": "Project"
   },
   {
