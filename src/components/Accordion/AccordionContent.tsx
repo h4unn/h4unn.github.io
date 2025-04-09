@@ -30,9 +30,9 @@ export default function AccordionContent({
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ type: "spring", duration: 0.4, bounce: 0 }}
         >
-          {children}
+          <span>{children}</span>
         </motion.div>
       ) : null}
     </>

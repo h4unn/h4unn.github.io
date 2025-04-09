@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Suspense } from "react";
 import cn from "classnames/bind";
 import styles from "./TabList.module.scss";
 import { SkillIcon, CDN_URL } from "../../components/Icon";
@@ -103,7 +104,9 @@ export default function TabContent(props: TabListProps) {
             {selectedItem.image && (
               <div className={cx("ProjectImage")}>
                 {selectedItem.image.map((img, idx) => (
-                  <img key={idx} src={img} alt={selectedItem.title} />
+                  <Suspense key={idx} fallback={<div>Loading...</div>}>
+                    <img key={idx} src={img} alt={selectedItem.title} />
+                  </Suspense>
                 ))}
               </div>
             )}

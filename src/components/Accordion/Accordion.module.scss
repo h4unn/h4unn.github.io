@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+}
 
 .accordion-item-title {
   margin: 0;
@@ -18,8 +22,12 @@
 }
 
 .accordion-item-content {
-  padding: 1rem;
   border-top: 1px solid var(--primary-color);
+
+  span {
+    display: block;
+    padding: 1rem;
+  }
 }
 
 .close {

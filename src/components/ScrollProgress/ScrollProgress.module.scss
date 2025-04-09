@@ -1,0 +1,51 @@
+.progress-container {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 100;
+}
+
+.progress-item {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.progress-step {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--gray-gray-90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+
+
+  &.active {
+    background-color: var(--primary-color);
+  }
+
+  &.completed {
+    background-color: var(--gray-gray-70);
+  }
+
+
+}
+
+.step-label {
+  transition: opacity 0.3s;
+  opacity: 0;
+  font-size: 1rem;
+  font-weight: 700;
+
+  &.active {
+    color: var(--primary-color);
+    opacity: 1;
+  }
+}
